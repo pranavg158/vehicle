@@ -1,4 +1,4 @@
-dlib<=19.22.99
+dlib-bin
 cmake==3.22.4
 imutils==0.5.4
 keras==2.8.0
