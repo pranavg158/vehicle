@@ -186,8 +186,8 @@ def trackMultipleObjects():
               break
 
     
-    cv2.destroyAllWindows()
-    out.release()
+    #cv2.destroyAllWindows()
+    #out.release()
 
 
 
