@@ -178,8 +178,7 @@ def trackMultipleObjects():
                       if speed[i] != None and y1 >= 180:
                           cv2.putText(resultImage, str(int(speed[i])) + "km/h", (int(x1 + w1/2), int(y1-5)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 100) ,2)
 
-          f = st.empty() 
-          f.image(resultImage, channels = "BGR")
+          cv2.imshow('result', resultImage)
         
 
           out.write(resultImage)
@@ -537,7 +536,7 @@ def video_count_vehicle():
         # write the output frame to disk
       writer.write(frame)
 
-      st.image(frame, caption = 'Frame')
+      cv2.imshow('Frame', frame)
       if cv2.waitKey(1) & 0xFF == ord('q'):
         break	
       
