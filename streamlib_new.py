@@ -181,16 +181,18 @@ def trackMultipleObjects():
           #cv2.imshow('result', resultImage)
           #image1=Image.open(resultImage)
           #st.image(image1, width=1280)
+          out.write(resultImage)
+
+          if cv2.waitKey(1) == 27:
+              break
+                
       video_file = open('outNew.mp4', 'rb')
       video_bytes = video_file.read()
 
       st.video(video_bytes)
             
 
-          out.write(resultImage)
 
-          if cv2.waitKey(1) == 27:
-              break
 
     
     #cv2.destroyAllWindows()
