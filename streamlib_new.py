@@ -546,10 +546,11 @@ def video_count_vehicle():
 
         # write the output frame to disk
       writer.write(frame)
-
-      cv2.imshow('Frame', frame)
-      if cv2.waitKey(1) & 0xFF == ord('q'):
-        break	
+      place1=st.image(frame, channels='BGR')
+      place1=st.empty()
+      #cv2.imshow('Frame', frame)
+      #if cv2.waitKey(1) & 0xFF == ord('q'):
+        #break	
       
       # Updating with the current frame detections
       previous_frame_detections.pop(0) #Removing the first frame from the list
