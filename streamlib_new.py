@@ -183,7 +183,7 @@ def trackMultipleObjects():
           #st.image(image1, width=1280)
           out.write(resultImage)
           st.image(resultImage,channels='BGR')
-          st.video(resultImage)
+          #st.video(resultImage)
           #if cv2.waitKey(0) == 27:
               #break
                 
