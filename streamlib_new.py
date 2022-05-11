@@ -183,7 +183,6 @@ def trackMultipleObjects():
           #st.image(image1, width=1280)
           out.write(resultImage)
           place=st.image(resultImage,channels='BGR')
-          st.place
           place=st.empty()
           
           #st.video(resultImage)
