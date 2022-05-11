@@ -177,6 +177,7 @@ def trackMultipleObjects():
 
                       if speed[i] != None and y1 >= 180:
                           cv2.putText(resultImage, str(int(speed[i])) + "km/h", (int(x1 + w1/2), int(y1-5)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 100) ,2)
+                          st.image(resultImage)
 
           #cv2.imshow('result', resultImage)
           #image1=Image.open(resultImage)
@@ -186,10 +187,10 @@ def trackMultipleObjects():
           #if cv2.waitKey(0) == 27:
               #break
                 
-      video_file = open('outNew.mp4', 'rb')
-      video_bytes = video_file.read()
+      #video_file = open('outNew.mp4', 'rb')
+      #video_bytes = video_file.read()
 
-      st.video(video_bytes)
+      #st.video(video_bytes)
             
 
 
