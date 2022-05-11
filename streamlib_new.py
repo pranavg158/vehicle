@@ -182,7 +182,8 @@ def trackMultipleObjects():
           #image1=Image.open(resultImage)
           #st.image(image1, width=1280)
           out.write(resultImage)
-          st.image(resultImage,channels='BGR')
+          place=st.image(resultImage,channels='BGR')
+          place.empty()
           #st.video(resultImage)
           #if cv2.waitKey(0) == 27:
               #break
