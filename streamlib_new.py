@@ -178,8 +178,10 @@ def trackMultipleObjects():
                       if speed[i] != None and y1 >= 180:
                           cv2.putText(resultImage, str(int(speed[i])) + "km/h", (int(x1 + w1/2), int(y1-5)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 100) ,2)
 
-          cv2.imshow('result', resultImage)
-        
+          #cv2.imshow('result', resultImage)
+          image1=Image.open(resultImage)
+          st.image(image1, width=1280)
+            
 
           out.write(resultImage)
 
