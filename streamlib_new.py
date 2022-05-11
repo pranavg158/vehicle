@@ -183,7 +183,7 @@ def trackMultipleObjects():
           #st.image(image1, width=1280)
           out.write(resultImage)
 
-          if cv2.waitKey(1) == 27:
+          if cv2.waitKey(0) == 27:
               break
                 
       video_file = open('outNew.mp4', 'rb')
